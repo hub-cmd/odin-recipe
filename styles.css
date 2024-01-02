@@ -1,8 +1,7 @@
 body{
     text-align: center;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-color: #453643;
-   
+    background-color: #453643;  
 }
 *{
     box-sizing: border-box;
@@ -19,62 +18,108 @@ h2{
     color:  #f8f6f5ca;
 }
 header,footer{
-    margin: 40px;
+    margin: 28px;
 }
 main{
-    margin: 60px auto;
-    width: 600px ;
- }
+    margin: 40px auto;
+    padding: 10px;
+}
+#main-container{
+    width: 600px;
+}
+.recipe-container{
+    width: 950px;
+    background-color: #9a8a8434;
+    box-shadow: 0px 0px 10px 2px #9a8a8425;
+    border-radius: 2px;
+}
+.recipe-card{
+    display: inline-block;
+    padding: 10px;
+    vertical-align: top;
+    margin: 10px;
+}
 
-ul{
-    padding: 0;
+/* Main Page List Styling */
+#main-list{
+    padding: 0px;
     list-style-type: none;
 }
-li{
+.main-list-item{
     margin-bottom: 20px;
     padding: 10px;
-    border-bottom: 1px solid #f8f6f534;
-    box-shadow: 0px 0px 10px 2px #9a8a8425; 
     background-color: #9a8a8434;
 }
-p{ 
+.main-list-item > p{ 
     padding: 3px;
     height: 150px;
     text-align: justify;
 }
 .description{
     font-size: 18px;
- }
+}
+
+.main-list-item, .recipe-card{
+    border-bottom: 1px solid #f8f6f534;
+}
+
+/* Recipe Page List Styling */
+.ingredients-list{
+    width: 200px;
+    text-align: justify;
+}
+.steps-list{
+    width: 600px;
+    list-style-type: none;
+    padding: 0px 10px;
+}
+.steps-list > li{
+    padding-bottom: 10px;
+}
+.ingredients-list > li{
+    margin-right: 10px;
+    padding-bottom: 4px;
+}
+.ingredients-list, .steps-list{
+    /* color: #9a8a8434; */
+    font-size: 18px;
+}
+.recipe-img{
+    width: 600px;
+    height: 400px;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Links Styling and Behaviour */
 a{
     text-decoration: none;
     color: #f8f6f5ad;
 }
-
-a.recipe-links{
+.main-links{
     font-size: 26px;
     font-weight: bold;
-    color: #f8f6f5ad;
-    text-decoration: none;
     background-color:  #453643;;
 } 
 a:hover{
     background-color: #9A8A84;
 }
-.recipe-links:hover {
+.main-links:hover {
     font-size: 30px;
 }
 
-.recipe-links>img{ 
+.main-link-img{ 
     height: 100%;
     width: 150px;
     float: left;
     margin-right: 10px; 
     border-radius: 50%;
     border: 2px solid #9A8A84;
- }
-.recipe-links>img:hover{
+}
+.main-link-img:hover{
     border: 0px;
     filter: blur(0.8px);
- }
+}
 
  
