@@ -1,11 +1,20 @@
 body{
     text-align: center;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-color: #453643;  
+    background-color: #453643;
 }
 *{
     box-sizing: border-box;
 }
+
+header,footer{
+    margin: 28px;
+}
+main{
+    margin: 40px auto;
+    padding: 10px;
+}
+
 h1,h3,footer,p {
     color: #9A8A84;
 }
@@ -17,23 +26,15 @@ h2{
     font-size: 20px;
     color:  #f8f6f5ca;
 }
-header,footer{
-    margin: 28px;
-}
-main{
-    margin: 40px auto;
-    padding: 10px;
-}
-#main-container{
+
+.main-container{
     width: 600px;
 }
 .recipe-container{
     width: 950px;
-    background-color: #9a8a8434;
-    box-shadow: 0px 0px 10px 2px #9a8a8425;
     border-radius: 2px;
 }
-.recipe-card{
+.recipe-info{
     display: inline-block;
     padding: 10px;
     vertical-align: top;
@@ -41,14 +42,14 @@ main{
 }
 
 /* Main Page List Styling */
-#main-list{
+.main-list{
     padding: 0px;
     list-style-type: none;
 }
 .main-list-item{
     margin-bottom: 20px;
     padding: 10px;
-    background-color: #9a8a8434;
+    
 }
 .main-list-item > p{ 
     padding: 3px;
@@ -59,30 +60,27 @@ main{
     font-size: 18px;
 }
 
-.main-list-item, .recipe-card{
-    border-bottom: 1px solid #f8f6f534;
-}
-
 /* Recipe Page List Styling */
 .ingredients-list{
     width: 200px;
-    text-align: justify;
+    list-style-position: inside;
+    padding: 0px 5px;
 }
 .steps-list{
     width: 600px;
-    list-style-type: none;
-    padding: 0px 10px;
+    padding: 0px 40px;
+    text-align: justify;
 }
 .steps-list > li{
-    padding-bottom: 10px;
+    padding: 10px;
 }
 .ingredients-list > li{
     margin-right: 10px;
-    padding-bottom: 4px;
+    padding: 10px;
 }
 .ingredients-list, .steps-list{
-    /* color: #9a8a8434; */
     font-size: 18px;
+    color: #9A8A84;
 }
 .recipe-img{
     width: 600px;
@@ -90,6 +88,18 @@ main{
     border-radius: 10px;
     display: block;
     margin: 0 auto;
+}
+
+.main-list-item, .recipe-info{
+    border-bottom: 1px solid #f8f6f534;
+}
+.ingredients-list,.steps-list{
+    border-top: 1px solid #f8f6f534;
+}
+
+.main-list-item, .recipe-container{
+    background-color: #9a8a8425;
+    box-shadow: 0px 0px 10px 2px #9a8a8425;
 }
 
 /* Links Styling and Behaviour */
@@ -100,7 +110,8 @@ a{
 .main-links{
     font-size: 26px;
     font-weight: bold;
-    background-color:  #453643;;
+
+    background-color: #453643;;
 } 
 a:hover{
     background-color: #9A8A84;
